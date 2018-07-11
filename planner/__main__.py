@@ -1,14 +1,10 @@
 #!/usr/bin/env python
-import sys
 
-from . import PlannerCmd
+from . import TodoCmd
 
 
 def main():
-    if len(sys.argv) == 1:
-        PlannerCmd().cmdloop()
-    else:
-        print('not loop')
+    TodoCmd().cmdloop()
 
 
 if __name__ == '__main__':
